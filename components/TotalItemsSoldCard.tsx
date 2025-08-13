@@ -40,18 +40,59 @@ export default function TotalItemsSoldCard() {
   return (
     <section className="flex flex-col rounded-xl border border-[#F1F1F1] bg-white shadow-[0px_1px_0px_0px_#0000001F] h-full relative font-inter">
       {/* Card Header */}
-      <div className="flex items-center justify-between p-3 border border-[#F1F1F1] rounded-t-xl">
+      <div className="flex items-center justify-between p-2 border border-[#F1F1F1] rounded-t-xl">
         <span className="text-[14px] font-semibold leading-5 text-[#515153] -tracking-[0.26px] text-center">
           Total items sold
         </span>
         <div className="flex justify-between items-center gap-4">
-          <Image
-            src="/LogoMark.svg"
-            alt="logo-mark"
-            width={20}
-            height={20}
-            className="size-[20px]"
-          />
+          <div className="relative group flex items-center">
+            <Image
+              src="/LogoMark.svg"
+              alt="logo-mark"
+              width={28}
+              height={28}
+              className="size-7 cursor-pointer"
+            />
+
+            {/* Tooltip content */}
+            <div
+              className="absolute left-1/2 -translate-x-1/2 bottom-6 z-20 mb-2 w-64 rounded-xl shadow-lg bg-white border border-[#F1F1F1] p-4
+      opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+            >
+              <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center justify-center w-6 h-6 rounded">
+                  <Image
+                    src="/LogoMark.svg"
+                    alt="logo-mark"
+                    width={28}
+                    height={28}
+                    className="size-7"
+                  />
+                </div>
+                <span className="font-semibold text-sm text-[#515153] leading-5 -tracking-[0.26px] align-middle">
+                  Recommendations
+                </span>
+              </div>
+              <div className="font-bold text-sm leading-[100%] -tracking-[0.26px] align-middle text-[#0A090B]">
+                Low inventory detected in 12 dark stores
+              </div>
+              <div className="text-[13px] text-[#4F5F5B] leading-[100%] -tracking-[0.26px] align-middle">
+                We have detected a DOI of less than 15 days in Golf Course Rd,
+                Sarjapur Rd, and 10 more areas.
+              </div>
+              {/* Tooltip arrow */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-16px] w-4 h-4">
+                <svg width="17" height="10">
+                  <polygon
+                    points="0,0 17,0 8.5,10"
+                    fill="white"
+                    stroke="#D1D5DB"
+                    strokeWidth="1"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
           <Image
             src="/help.svg"
             alt="help"
