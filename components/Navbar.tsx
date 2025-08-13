@@ -171,7 +171,7 @@ export const Navbar = () => {
             <div className="flex justify-between py-2 px-3 cursor-pointer hover:bg-[#DFEAE8] rounded">
               <div className="flex gap-3 items-center">
                 <Image
-                  src="/ads.svg"
+                  src="/ads.png"
                   alt="Google Ads"
                   width={16}
                   height={16}
@@ -186,7 +186,7 @@ export const Navbar = () => {
               </div>
             </div>
 
-            {/* Meta Ads sub section */}
+            {/* Google Ads sub section */}
             <div className="flex">
               <div className="flex px-[20px]">
                 <div className="w-[1px] bg-[#031B15] opacity-20"></div>

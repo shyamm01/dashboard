@@ -59,26 +59,28 @@ export default function TotalItemsSoldCard() {
               className="absolute left-1/2 -translate-x-1/2 bottom-6 z-20 mb-2 w-64 rounded-xl shadow-lg bg-white border border-[#F1F1F1] p-4
       opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
             >
-              <div className="flex items-center gap-2 mb-1">
-                <div className="flex items-center justify-center w-6 h-6 rounded">
-                  <Image
-                    src="/LogoMark.svg"
-                    alt="logo-mark"
-                    width={28}
-                    height={28}
-                    className="size-7"
-                  />
+              <div className="flex flex-col gap-2.5">
+                <div className="flex items-center gap-2 ">
+                  <div className="flex items-center justify-center w-6 h-6 rounded">
+                    <Image
+                      src="/LogoMark.svg"
+                      alt="logo-mark"
+                      width={28}
+                      height={28}
+                      className="size-7"
+                    />
+                  </div>
+                  <span className="font-semibold text-sm text-[#515153] leading-5 -tracking-[0.26px] align-middle ">
+                    Recommendations
+                  </span>
                 </div>
-                <span className="font-semibold text-sm text-[#515153] leading-5 -tracking-[0.26px] align-middle">
-                  Recommendations
-                </span>
-              </div>
-              <div className="font-bold text-sm leading-[100%] -tracking-[0.26px] align-middle text-[#0A090B]">
-                Low inventory detected in 12 dark stores
-              </div>
-              <div className="text-[13px] text-[#4F5F5B] leading-[100%] -tracking-[0.26px] align-middle">
-                We have detected a DOI of less than 15 days in Golf Course Rd,
-                Sarjapur Rd, and 10 more areas.
+                <div className="font-bold text-sm leading-[100%] -tracking-[0.26px] align-middle text-[#0A090B] ">
+                  Low inventory detected in 12 dark stores
+                </div>
+                <div className="text-[13px] text-[#4F5F5B] leading-[100%] -tracking-[0.26px] align-middle ">
+                  We have detected a DOI of less than 15 days in Golf Course Rd,
+                  Sarjapur Rd, and 10 more areas.
+                </div>
               </div>
               {/* Tooltip arrow */}
               <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-16px] w-4 h-4">
